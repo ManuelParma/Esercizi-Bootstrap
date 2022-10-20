@@ -11,9 +11,93 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
+  <style>
+    :root{
+      --color-1: #0b0c10;
+      --color-2: #1f2833;
+      --color-3: #c5c6c7;
+      --color-4: #66fcf1;
+      --color-5: #45a29e;
+      --color-1-alfa: #0b0c10b0;
+    }
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      /* background-color: var(--color-1); */
+      background: var(--color-1-alfa) url('https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2018/11/dark-wallpapers.jpg');
+      background-blend-mode: darken;
+    }
+    .title {
+      color: var(--color-4);
+      text-transform: uppercase;
+      font-size: 3em;
+    }
+    .title-box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      gap: 60px;
+    }
+    .description {
+      width: 50vw;
+      text-align: center;
+      color: var(--color-3);
+    }
+    .nav {
+      position: absolute;
+      left: -250px;
+      top: 0;
+      color: var(--color-3);
+      height: 100vh;
+    }
+    .nav:hover {
+      left: 0;
+    }
+    .nav-btn {
+      width: 50px;
+      height: 50px;
+      background-color: var(--color-4);
+      position: absolute;
+      right: -200px;
+    }
+    .nav-list {
+      list-style: none;
+      padding-right: 60px;
+      height: 100vh;
+      display: flex;
+      justify-content: space-evenly;
+      flex-direction: column;
+    }
+    .nav-list li a {
+      color: var(--color-4);
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
 </head>
 
 <body>
+  <div class="nav">
+    <div class="nav-btn"></div>
+    <ul class="nav-list">
+      <li><a href="#">Click me</a></li>
+      <li><a href="#">Click me</a></li>
+      <li><a href="#">Click me</a></li>
+      <li><a href="#">Click me</a></li>
+      <li><a href="#">Click me</a></li>
+    </ul>
+  </div>
+  <div class="t-container">
+    <div class="title-box">
+      <h1 class="title">Ciao</h1>
+      <div class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium tempora consectetur aliquid id itaque repellendus assumenda, reprehenderit non in dignissimos quod minima veniam ullam natus inventore distinctio, nostrum aut minus est. Iusto totam quod perferendis ipsum ipsa labore quis similique cum laboriosam aperiam aliquam assumenda non, quo vel aliquid earum!</div>
+    </div>
+  </div> 
 </body>
 
 </html>
